@@ -37,9 +37,10 @@ gulp.task('sass', function () {
 gulp.task('scripts', function () {
   return gulp.src(['./src/js/custom/*.js'])
     .pipe(sourcemaps.init())
-    .pipe(concat('production.js'))
+    .pipe(uglify())
+    .pipe(concat('production.min.js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./src/js/dist'));
+    .pipe(gulp.dest('./src/app/js'));
 });
 
 gulp.task('jshint', function () {

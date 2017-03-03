@@ -10,7 +10,192 @@
     <link href="css/main.min.css" rel="stylesheet">
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/production.min.js" type="text/javascript"></script>
-    <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <div id="main">
+        <header class="navigation" role="banner">
+          <div class="navigation-wrapper"><a class="logo" href="javascript:void(0)"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo Image"></a><a class="navigation-menu-button" id="js-mobile-menu" href="javascript:void(0)">MENU</a>
+            <nav role="navigation">
+              <ul class="navigation-menu show" id="js-navigation-menu">
+                <li class="nav-link"><a href="javascript:void(0)">Главная</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">Услуги</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">Преимущества</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">Сертификаты</a></li>
+                <li class="nav-link"><a href="javascript:void(0)">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="navigation-tools">
+              <div class="search-bar">
+                <form role="search">
+                  <input type="search" placeholder="Enter Search">
+                  <button type="submit"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+    <section>
+      <section id="middle-row">
+        <div class="side-image">
+          <div class="images-wrapper"></div>
+          <div class="side-image-content">
+            <h4>Topic Name</h4>
+            <h1>Добро пожаловать на наш сайт!</h1>
+            <p>
+              Бухгалтерские услуги и бухгалтерское сопровождение – это основное направление в деятельности компании
+              	ТОО «Консалтинг Премиум-Сервис»
+              	Специалисты  компании используют передовые информационные технологии, программное обеспечение. Обеспечивается сохранность и
+              	полная конфиденциальность данных наших заказчиков.
+              	В рамках ведения учета анализируем заключенные клиентом договора, состояние  дебиторской и кредиторской задолженности,
+              	предложим конкретные рекомендации  в отношении ведения бухгалтерского и управленческого учета. Подбор оптимальных вариантов
+              	применения налоговых режимов.
+              	Сотрудничая с нами, вы получаете качественный бухгалтерский учет, выполненный в срок.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+  <section>
+    <section id="top-row">
+      <section id="content-2">
+        <div class="fade-in-element" id="js-fadeInElement">
+          <ul class="bullets">
+            <li class="bullet">
+              <div class="bullet-icon bullet-icon-1"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt=""></div>
+              <div class="bullet-content">
+                <h2>Проверим</h2>
+                <p>состояние учета в Вашей компании: по результатам экспресс-аудита выявим проблемы в учете</p>
+              </div>
+            </li>
+            <li class="bullet">
+              <div class="bullet-icon bullet-icon-2"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt=""></div>
+              <div class="bullet-content">
+                <h2>Вникнем</h2>
+                <p>в специфику Вашего бизнеса и проконсультируем относительно особенностей ведения учета Вашей компании</p>
+              </div>
+            </li>
+            <li class="bullet">
+              <div class="bullet-icon bullet-icon-3"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt=""></div>
+              <div class="bullet-content">
+                <h2>Подскажем</h2>
+                <p>пути снижения налоговых рисков и подберем пути снижения налоговых нагрузок.</p>
+              </div>
+            </li>
+            <li class="bullet">
+              <div class="bullet-icon bullet-icon-3"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt=""></div>
+              <div class="bullet-content">
+                <h2>Сэкономим</h2>
+                <p>Ваши расходы на заработную плату бухгалтера, его рабочего места и программного обеспечения</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </section>
+  <section>
+    <section id="middle-row">
+      <div class="side-image">
+        <div class="side-image-content">
+          <h1>Перечень предоставляемых услуг</h1>
+          <ol>
+            <li>•	Комплексное ведение и сопровождение бухгалтерского и налогового учета частных предприятий и малого бизнеса</li>
+            <li>•	Составление годовых отчетов</li>
+            <li>•	Услуги «приходящий бухгалтер»</li>
+            <li>•	Восстановление бухгалтерского учета</li>
+            <li>•	Подготовка и сдача налоговой и статистической отчетности</li>
+            <li>•	Консультация по вопросам налогообложения и ведения бухгалтерского учета.</li>
+            <li>•	Кадровое делопроизводство</li>
+            <li>•	Бухгалтерское сопровождение компаний с иностранным капиталом</li>
+            <li>•	Ликвидация компаний</li>
+            <li>•	Ведение банк-клиента</li>
+            <li>•	Составление нормативных документов, в том числе учетная политика, налоговая политика, правила</li>
+            <li>•	Постановка на электронные счета-фактуры</li>
+          </ol>
+        </div>
+        <div class="images-wrapper service"></div>
+      </div>
+    </section>
+  </section>
+  <section>
+    <section id="middle-row">
+      <h1>Сертификаты</h1>
+    </section>
+  </section>
+  <section>
+    <section id="middle-row">
+      <div class="cards">
+        <div class="card">
+          <div class="card-image"><img src="/assets/images/cert1.jpg" alt=""></div>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="/assets/images/cert2.jpg" alt="" id="vertical-img"></div>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="/assets/images/cert3.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section>
+    <section id="middle-row">
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script>
+        var bittersMap = (function () {
+        var myLatlng = new google.maps.LatLng(59.342457, 18.057340),
+        mapCenter = new google.maps.LatLng(59.340458, 18.057340),
+        mapCanvas = document.getElementById('map_canvas'),
+        mapOptions = {
+        center: mapCenter,
+        zoom: 13,
+        scrollwheel: false,
+        draggable: true,
+        disableDefaultUI: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(mapCanvas, mapOptions),
+        contentString =
+        '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+        '<div id="bodyContent"'+
+        '<p>Sveavägen 98</p>'+
+        '</div>'+
+        '</div>',
+        infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        maxWidth: 300
+        }),
+        marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'thoughtbot (Sweden)'
+        });
+        return {
+        init: function () {
+        map.set('styles', [{
+        featureType: 'landscape',
+        elementType: 'geometry',
+        stylers: [
+        { hue: '#ffff00' },
+        { saturation: 30 },
+        { lightness: 10}
+        ]}
+        ]);
+        google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map,marker);
+        });
+        }
+        };
+        }());
+        bittersMap.init();
+      </script>    -->
+      <div id="map_canvas"></div>
+    </section>
+  </section>
 </html>

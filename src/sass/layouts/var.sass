@@ -1,0 +1,30 @@
+
+// Media queries
+$desktop: new-breakpoint(min-width 960px 12)
+$tablet: new-breakpoint(max-width 959px 12)
+$mobile: new-breakpoint(max-width 767px 4)
+
+// Variables
+$max-width: 1280px
+
+
+// Colors
+$blue: #00aad8
+$blue-light: #9fd7ee
+$black: #141414
+
+
+
+
+.main-articles
+  @include outer-container
+
+  // additional style
+  @include pad(20px 30px 20px 30px)
+  background-color: $blue
+  min-height: 300px
+  color: $black
+
+
+.col1
+  @include span-columns(6)
