@@ -11,18 +11,21 @@
   background: $base-background-color;
     &:focus,
     &:hover {
-    background-color: rgba(192, 192, 192, 0.31);
-    border: 1px solid #dadada;
+    /*background-color: rgba(192, 192, 192, 0.31);
+    border: 1px solid #dadada;*/
+    box-shadow: 0.5px 1px 2px rgba(0,0,0,.3);
     }
   border: 1px solid silver;
   border-radius: $base-border-radius;
-  box-shadow: 0 2px 2px transparentize(black, 0.8);
+  box-shadow: 2px 4px 2px rgba(0,0,0,.3);
   line-height: $base-line-height;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
+  margin-top: 2em;
   padding: $base-spacing;
   text-align: center;
   width: 100%;
   margin-left: 10px;
+    transition: all 0.3s;
 
   p {
     color: $base-font-color;

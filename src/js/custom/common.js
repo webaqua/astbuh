@@ -1,11 +1,14 @@
 window.onscroll = function(){
  var html = document.documentElement, body = document.body;
  var BlkStyle = document.getElementById('navmenu').style;
- if(html.scrollTop>70||body.scrollTop>70) {
-     BlkStyle.position="fixed";
- } else BlkStyle.position="relative";
+ if(html.scrollTop>50||body.scrollTop>50) {
+     BlkStyle.top="0";
+     BlkStyle.transition="all 0.5s";
+ } else {
+   BlkStyle.top="-120px";
+   BlkStyle.transition="none";
+ }
 }
-
 
   $(document).ready(function() {
     $(window).resize(function() {
@@ -63,8 +66,8 @@ window.onscroll = function(){
     });
 
     var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(59.342457, 18.057340),
-    mapCenter = new google.maps.LatLng(59.340458, 18.057340),
+    var myLatlng = new google.maps.LatLng(51.1801000, 71.4459800),
+    mapCenter = new google.maps.LatLng(51.1801000, 71.4459800),
     mapCanvas = document.getElementById('map_canvas'),
     mapOptions = {
     center: mapCenter,
@@ -111,4 +114,13 @@ window.onscroll = function(){
     };
     }());
     bittersMap.init();
+
+   jQuery('.go_to').click( function(){
+     var scroll_el = jQuery(this).attr('href');
+     if (jQuery(scroll_el).length != 0) {
+       jQuery('html, body').animate({ scrollTop: jQuery(scroll_el).offset().top - 70 }, 500);
+     }
+     return false;
+   });
+
   });

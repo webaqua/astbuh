@@ -2,8 +2,13 @@
 
 
   background: $primary-color;
-  padding: ($base-spacing * 2) $gutter;
+  padding: $base-spacing $gutter;
   width: 100%;
+  text-align: center;
+
+  a {
+    color: #fff;
+  }
 
   .footer-logo {
     margin-bottom: 2em;

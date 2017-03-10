@@ -5,6 +5,10 @@ $grid-columns: 12;
 	background-color: lightblue;
 	}
 
+div#content-2 {
+	background-color: rgba(23, 144, 131, 0.17);
+}
+
 section {
 	@include outer-container;
 	text-align: center;
@@ -20,10 +24,6 @@ section {
 			@include pad();
 			background-color: lightgrey;
 		}
-		#content-2 {
-			@include span-columns(12);
-			@include pad();
-		background-color: rgba(23, 144, 131, 0.17);
 
 			//@include shift(1);
             // background-color: rp-color('primary'); // Base color
@@ -80,4 +80,3 @@ section {
 			}
 		}
 	}
-}

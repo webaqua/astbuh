@@ -1,4 +1,4 @@
-header#navmenu.navigation(role='banner')
+header.navigation(role='banner')
   .navigation-wrapper
     a.logo(href='javascript:void(0)')
       span(style="color:#2dff09;") AST
@@ -7,15 +7,15 @@ header#navmenu.navigation(role='banner')
     nav(role='navigation')
       ul#js-navigation-menu.navigation-menu.show
         li.nav-link
-          a(href='javascript:void(0)') Главная
+          a.go_to(href='#bo') Главная
         li.nav-link
-          a(href='javascript:void(0)') Услуги
+          a.go_to(href='#content-2') Преимущества
         li.nav-link
-          a(href='javascript:void(0)') Преимущества
+          a.go_to(href='#usl') Услуги
         li.nav-link
-          a(href='javascript:void(0)') Сертификаты
+          a.go_to(href='#sert') Сертификаты
         li.nav-link
-          a(href='javascript:void(0)') Контакты
+          a.go_to(href='#foot') Контакты
     .navigation-tools
       .search-bar
         p

@@ -1,16 +1,34 @@
+div#navmenu {
+    position: fixed;
+    width: 100%;
+    top: -200px;
+    transition: all 0.5s;
+    z-index: 9999;
+
+    header.navigation {
+      background-color:rgba(23, 144, 131, 0.9)
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+  div#navmenu {
+    display: none;
+  }
+}
+
 header.navigation {
-
-
-background-color: $primary-color;
- border-bottom: 1px solid darken($primary-color, 10);
- min-height: $navigation-height;
- width: 100%;
- z-index: 999;
+  background-color: $primary-color;
+  border-bottom :  7px solid  rgba(0, 0, 0, 0.11) ;
+  min-height: $navigation-height;
+  width: 100%;
+  z-index: 999;
 
   .navigation-wrapper {
     @include clearfix;
     position: relative;
     z-index: 9999;
+    @include outer-container;
   }
 
   .logo {
