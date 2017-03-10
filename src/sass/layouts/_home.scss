@@ -23,9 +23,7 @@ section {
 		#content-2 {
 			@include span-columns(12);
 			@include pad();
-			background: #000;
-			background-image: url(/assets/images/congruent_pentagon.png);
-
+		background-color: rgba(23, 144, 131, 0.17);
 
 			//@include shift(1);
             // background-color: rp-color('primary'); // Base color
