@@ -9,6 +9,11 @@
 
   @include clearfix;
   background: $base-background-color;
+    &:focus,
+    &:hover {
+    background-color: rgba(192, 192, 192, 0.31);
+    border: 1px solid #dadada;
+    }
   border: 1px solid silver;
   border-radius: $base-border-radius;
   box-shadow: 0 2px 2px transparentize(black, 0.8);
@@ -17,6 +22,7 @@
   padding: $base-spacing;
   text-align: center;
   width: 100%;
+  margin-left: 10px;
 
   p {
     color: $base-font-color;

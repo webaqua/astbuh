@@ -17,29 +17,29 @@ $rp-colors: (
         'grotesque': #7CB342,
         'grotesque-light': #D8EDC2,
    ),
-   
+
    'yellow': ( // yellows
         'base': #FDB53B,
         'fuel-yellow': #FDB53B,
         'fuel-yellow-light': #F2E4CE,
    ),
-    
+
    'purple': ( // purples
 		'base': #B7006A,
 		'light': #E4BAD2
    ),
-   
+
    'red': ( // reds
 		'base': #DE4848,
         'flush-mahogany': #E9B4B4,
    ),
-   
+
    'white': ( // whites
         'base': #ffffff,
         'wild-sand': #F3F3F3,
         'alabaster': #FAFAFA
    ),
-    
+
    'black': ( // blacks
    		'base': #000000
    )
@@ -52,8 +52,8 @@ $rp-opacity: (
   '40': 0.4,
   '50': 0.5,
   '60': 0.6,
-  '70': 0.7, 
-  '80': 0.8  
+  '70': 0.7,
+  '80': 0.8
 );
 
 @function rp-color(
@@ -62,22 +62,22 @@ $rp-opacity: (
   $opacity: 1
 ) {
   $color: null;
-  
+
   // Get the color spectrum
   $color-spectrum: map-get($rp-colors, $name);
-  
+
   // Get the color variant
   @if $color-spectrum {
     $color: map-get($color-spectrum, $variant);
   }
-  
+
   // Get the alpha setting
   $alpha: if(type-of($opacity) == 'number', $opacity, map-get($rp-opacity, $opacity));
-  
+
   // Set the alpha of the color
   @if $alpha {
     $color: rgba($color, $alpha);
   }
-  
+
   @return $color;
 }

@@ -6,7 +6,7 @@
   $base-font-color: $dark-gray !default;
   $side-image-background-top: #B5EBEB;
   $side-image-background-bottom: #5DAC5D;
-  $side-image-content-background: #F9F9F9;
+  $side-image-content-background: #Ffff;
   $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
   $base-spacing: em(32px);
 
@@ -47,6 +47,11 @@
 
     h1 {
       margin-bottom: 0.9em;
+      color: $primary-color;
+      //@include font-face(Exo 2, '/fonts/Exo2-Black.ttf');
+      @import url(https://fonts.googleapis.com/css?family=Exo+2);
+      font-family: 'Exo 2', sans-serif;
+
     }
 
     h4 {
