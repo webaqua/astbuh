@@ -20,9 +20,10 @@
     border-radius: 50%;
     float: left;
     height: $icon-bullet-size;
-    padding: $icon-bullet-size / 4;
+    padding: $icon-bullet-size / 4.1 0;
     width: $icon-bullet-size;
     color: white;
+    text-align: center;
   }
 
   .bullet-icon-1 {
@@ -40,6 +41,7 @@
     font-size: $icon-bullet-size / 2.5;
     margin: 0 0 ($icon-bullet-size / 6) 0;
     padding-top: $icon-bullet-size / 7;
+    font-family: 'Exo 2', sans-serif;
   }
 
   li {
@@ -54,4 +56,7 @@
   img {
     max-width: 100%;
   }
+}
+ul.bullets li:nth-of-type(3) .bullet-icon.bullet-icon-1 {
+    padding-left: 0.1em;
 }

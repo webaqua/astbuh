@@ -1,3 +1,12 @@
+window.onscroll = function(){
+ var html = document.documentElement, body = document.body;
+ var BlkStyle = document.getElementById('navmenu').style;
+ if(html.scrollTop>60||body.scrollTop>60) {
+     BlkStyle.position="fixed";
+ } else BlkStyle.position="relative";
+}
+
+
   $(document).ready(function() {
     $(window).resize(function() {
       var more = document.getElementById("js-navigation-more");
