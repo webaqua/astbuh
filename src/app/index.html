@@ -156,6 +156,22 @@
       </div>
     </section>
   </section>
+  <div class="parallax-window" id="js-parallax-window">
+    <div class="parallax-static-content">
+      <div class="tabletka"><b>Вы можете заказать консультацию, отправив online заявку на почту</b>
+        <input class="order" id="order" type="button" value="Оставить заявку" onClick="showMod()">
+      </div>
+    </div>
+    <div class="parallax-background" id="js-parallax-background"></div>
+  </div>
+  <div class="modorder" id="modorder" onClick="hideMod()"></div>
+  <form id="form1" action="/components/order/send.php" method="POST">
+    <p>Оставьте заявку</p>
+    <input type="text" required="" name="name1" placeholder="Имя">
+    <input type="text" required="" name="phone1" placeholder="Телефон">
+    <textarea name="mess" placeholder="Сообщение"></textarea>
+    <input type="submit" value="Отправить">
+  </form>
   <div id="map_canvas"></div>
   <footer class="footer" id="foot" role="contentinfo"><a href="http://web-aqua.kz">Разработано компанией "Web-Aqua"</a></footer>
 </html>
