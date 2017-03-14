@@ -9,12 +9,10 @@ div#navmenu {
       background-color:rgba(23, 144, 131, 0.9)
     }
 
-}
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
 
-@media screen and (max-width: 600px) {
-  div#navmenu {
-    display: none;
-  }
 }
 
 header.navigation {
@@ -23,6 +21,10 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+
+  @media screen and (max-width: 900px) {
+    position: fixed;
+  }
 
   .navigation-wrapper {
     @include clearfix;
@@ -281,7 +283,7 @@ header.navigation {
 // Elements on the far right
 
   .navigation-tools {
-    background: #505050;
+    background: $primary-color;
     clear: both;
     display: block;
     height: $navigation-height;
@@ -291,6 +293,14 @@ header.navigation {
       background: transparent;
       clear: none;
       float: right;
+    }
+
+    @media screen and (max-width: 900px) {
+      height: auto;
+    }
+
+    p {
+      margin: 0;
     }
   }
 
@@ -303,12 +313,11 @@ header.navigation {
     $search-bar-background: lighten($search-bar-border-color, 10%);
 
     float: left;
-        padding: 0.6em .85em .7em .6em;
+    padding: 0.6em .85em .7em .6em;
     width: 60%;
     font-size: 23px;
-        width: 19em;
+    width: 19em;
     color:white;
-
 
     span {
       font-size: 0.7em;
@@ -316,6 +325,9 @@ header.navigation {
       top: -3px;
     }
 
+    @media screen and (max-width: 900px) {
+      padding: 0 0.5em;
+    }
 
 
     @include media($horizontal-bar-mode) {
